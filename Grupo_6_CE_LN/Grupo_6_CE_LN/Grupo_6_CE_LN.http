@@ -1,0 +1,6 @@
+@Grupo_6_CE_LN_HostAddress = http://localhost:5189
+
+GET {{Grupo_6_CE_LN_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
