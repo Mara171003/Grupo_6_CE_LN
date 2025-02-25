@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\XPC\\Documents\\GitHub\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Grupo_6_CE_LN.csproj": {}
+    "C:\\Users\\Admin\\Source\\Repos\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Grupo_6_CE_LN.csproj": {}
   },
   "projects": {
-    "C:\\Users\\XPC\\Documents\\GitHub\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Grupo_6_CE_LN.csproj": {
+    "C:\\Users\\Admin\\Source\\Repos\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Grupo_6_CE_LN.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\XPC\\Documents\\GitHub\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Grupo_6_CE_LN.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Grupo_6_CE_LN.csproj",
         "projectName": "Grupo_6_CE_LN",
-        "projectPath": "C:\\Users\\XPC\\Documents\\GitHub\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Grupo_6_CE_LN.csproj",
-        "packagesPath": "C:\\Users\\XPC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\XPC\\Documents\\GitHub\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Source\\Repos\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Grupo_6_CE_LN.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Source\\Repos\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\XPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,13 +44,32 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
@@ -75,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
