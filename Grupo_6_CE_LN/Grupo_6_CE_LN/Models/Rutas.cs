@@ -1,4 +1,6 @@
-﻿namespace Grupo_6_CE_LN.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Grupo_6_CE_LN.Models
 {
     public class Rutas
     {

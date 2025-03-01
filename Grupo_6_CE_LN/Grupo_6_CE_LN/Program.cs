@@ -1,35 +1,35 @@
+using Grupo_6_CE_LN.Data;
 using Microsoft.EntityFrameworkCore;
-using Grupo_6_CE_LN.Models;
+using Microsoft.OpenApi.Models;
+using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Configurar conexión a la base de datos SQL Server
+builder.Services.AddDbContext<CasoEstudioContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<CasoEstudioContext>(op =>
+// Agregar servicios de controladores
+builder.Services.AddControllers();
+
+// Configurar Swagger para documentación de API
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(c =>
 {
-    op.UseSqlServer(builder.Configuration.GetConnectionString("CasoEstudio"));
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "API de Vehículos", Version = "v1" });
 });
-
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configurar middleware
 if (app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Home/Error");
-
-    app.UseHsts();
+    app.UseSwagger();
+    app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "API de Vehículos v1"));
 }
 
 app.UseHttpsRedirection();
-app.UseStaticFiles();
-app.UseRouting();
-
 app.UseAuthorization();
-
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controlles=Home}/{action=Index}/{id?}");
+app.MapControllers(); // ?? Esto mapea todos los controladores automáticamente
 
 app.Run();

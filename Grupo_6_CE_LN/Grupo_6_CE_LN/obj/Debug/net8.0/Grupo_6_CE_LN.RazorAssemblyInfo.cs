@@ -11,13 +11,8 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Grupo_6_CE_LN")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2645d5363b4d5dbe7ff9d741d08b1c097be75fe5")]
-[assembly: System.Reflection.AssemblyProductAttribute("Grupo_6_CE_LN")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Grupo_6_CE_LN")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: Microsoft.AspNetCore.Mvc.ApplicationParts.ProvideApplicationPartFactoryAttribute("Microsoft.AspNetCore.Mvc.ApplicationParts.ConsolidatedAssemblyApplicationPartFact" +
+    "ory, Microsoft.AspNetCore.Mvc.Razor")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.
 

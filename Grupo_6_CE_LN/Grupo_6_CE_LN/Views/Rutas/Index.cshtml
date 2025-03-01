@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Grupo_6_CE_LN.Models.Rutas>
+
+@{
+    ViewData["Title"] = "Rutas";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a href="@Url.Action("Create")" class="btn btn-primary">Crear Nuevo Vehículo</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Codigo de ruta</th>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Estado</th>
+            <th>Fecha de Registro</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.IdRuta</td>
+                <td>@item.NombreRuta</td>
+                <td>@item.Descripcion</td>
+                <td>@item.Estado</td>
+                <td>@item.FechaRegistro</td>
+                <td>
+                    <a href="@Url.Action("Details", new { id = item.IdRuta })" class="btn btn-info">Detalles</a>
+                    <a href="@Url.Action("Edit", new { id = item.IdRuta })" class="btn btn-warning">Editar</a>
+                    <a href="@Url.Action("Delete", new { id = item.IdRuta })" class="btn btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+             
