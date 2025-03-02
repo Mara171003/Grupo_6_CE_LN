@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Grupo_6_CE_LN.props" />
+</Project>

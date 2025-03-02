@@ -1,11 +1,17 @@
+using Grupo_6_CE_LN.Models;
+using Microsoft.EntityFrameworkCore;
+
+#region Configuracion
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
-builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<CasoEstudioContext>(op =>
+    op.UseSqlServer(builder.Configuration.GetConnectionString("PA1Context"))
+    );
 
 var app = builder.Build();
 
@@ -17,9 +23,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
+app.UseStaticFiles();
+#endregion
 
 app.Run();
