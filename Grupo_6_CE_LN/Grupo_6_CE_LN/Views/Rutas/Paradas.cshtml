@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Grupo_6_CE_LN.Models.Paradas>
+
+@{
+    ViewData["Title"] = "Lista de Paradas";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Codigo de las paradas</th>
+            <th>Paradas</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.IdParada</td>
+                <td>@item.Detalles</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<Div>
+    <a href="@Url.Action("Horarios")" class="btn btn-info">Ver Horarios</a>
+    <a href="@Url.Action("Index")" class="btn btn-info">Lista de Rutas</a>
+</Div>

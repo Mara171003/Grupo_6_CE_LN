@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Grupo_6_CE_LN.Models.Horarios>
+
+@{
+    ViewData["Title"] = "Lista de Paradas";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Codigo del horario</th>
+            <th>Hora de salida</th>
+            <th>Hora de llegada</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.IdHorario</td>
+                <td>@item.HorarioSalida</td>
+                <td>@item.HorarioLlegada</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div>
+    <a href="@Url.Action("Paradas")" class="btn btn-info">Ver Paradas</a>
+    <a href="@Url.Action("Index")" class="btn btn-info">Lista de Rutas</a>
+</div>

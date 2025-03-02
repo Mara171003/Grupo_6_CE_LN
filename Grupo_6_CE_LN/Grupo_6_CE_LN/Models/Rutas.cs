@@ -12,7 +12,7 @@ namespace Grupo_6_CE_LN.Models
         //Id para lista de horarios
         public int IdHorario { get; set; }
         // Activo = 1, Inactivo = 0
-        public bool Estado  { get; set; }
+        public string Estado  { get; set; }
         public DateTime FechaRegistro { get; set; }
         //Nombre del usuario que realiza el registro
         public string UsuarioRegistro { get; set; }
