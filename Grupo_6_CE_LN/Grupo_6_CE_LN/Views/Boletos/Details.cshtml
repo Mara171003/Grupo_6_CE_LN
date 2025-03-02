@@ -1,0 +1,36 @@
+﻿@model Grupo_6_CE_LN.Models.Boletos
+
+@{
+    ViewData["Title"] = "Detalles del Boleto";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <h4>Boleto</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">ID Usuario</dt>
+        <dd class="col-sm-10">@Model.ID_Usuario</dd>
+
+        <dt class="col-sm-2">ID Ruta</dt>
+        <dd class="col-sm-10">@Model.IdRuta</dd>
+
+        <dt class="col-sm-2">ID Vehículo</dt>
+        <dd class="col-sm-10">@Model.Id</dd>
+
+        <dt class="col-sm-2">Fecha y Hora de Compra</dt>
+        <dd class="col-sm-10">@Model.FechaHoraCompra</dd>
+
+        <dt class="col-sm-2">Asiento</dt>
+        <dd class="col-sm-10">@Model.Asiento</dd>
+
+        <dt class="col-sm-2">Estado</dt>
+        <dd class="col-sm-10">@Model.Estado</dd>
+    </dl>
+</div>
+
+<p>
+    <a href="@Url.Action("Edit", new { id = Model.ID_Boleto })" class="btn btn-warning">Editar</a>
+    <a href="@Url.Action("Index")" class="btn btn-primary">Volver</a>
+</p>

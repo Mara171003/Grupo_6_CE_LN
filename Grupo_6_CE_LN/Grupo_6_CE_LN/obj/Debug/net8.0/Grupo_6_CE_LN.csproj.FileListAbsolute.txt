@@ -168,3 +168,16 @@ C:\Users\XPC\Documents\GitHub\Grupo_6_CE_LN\Grupo_6_CE_LN\Grupo_6_CE_LN\obj\Debu
 C:\Users\XPC\Documents\GitHub\Grupo_6_CE_LN\Grupo_6_CE_LN\Grupo_6_CE_LN\obj\Debug\net8.0\Grupo_6_CE_LN.dll
 C:\Users\XPC\Documents\GitHub\Grupo_6_CE_LN\Grupo_6_CE_LN\Grupo_6_CE_LN\obj\Debug\net8.0\refint\Grupo_6_CE_LN.dll
 C:\Users\XPC\Documents\GitHub\Grupo_6_CE_LN\Grupo_6_CE_LN\Grupo_6_CE_LN\obj\Debug\net8.0\Grupo_6_CE_LN.pdb
+C:\Users\XPC\Documents\GitHub\Grupo_6_CE_LN\Grupo_6_CE_LN\Grupo_6_CE_LN\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\XPC\Documents\GitHub\Grupo_6_CE_LN\Grupo_6_CE_LN\Grupo_6_CE_LN\bin\Debug\net8.0\appsettings.json
+C:\Users\XPC\Documents\GitHub\Grupo_6_CE_LN\Grupo_6_CE_LN\Grupo_6_CE_LN\bin\Debug\net8.0\Grupo_6_CE_LN.staticwebassets.endpoints.json
+C:\Users\XPC\Documents\GitHub\Grupo_6_CE_LN\Grupo_6_CE_LN\Grupo_6_CE_LN\bin\Debug\net8.0\Grupo_6_CE_LN.exe
+C:\Users\XPC\Documents\GitHub\Grupo_6_CE_LN\Grupo_6_CE_LN\Grupo_6_CE_LN\bin\Debug\net8.0\Grupo_6_CE_LN.deps.json
+C:\Users\XPC\Documents\GitHub\Grupo_6_CE_LN\Grupo_6_CE_LN\Grupo_6_CE_LN\bin\Debug\net8.0\Grupo_6_CE_LN.runtimeconfig.json
+C:\Users\XPC\Documents\GitHub\Grupo_6_CE_LN\Grupo_6_CE_LN\Grupo_6_CE_LN\bin\Debug\net8.0\Grupo_6_CE_LN.dll
+C:\Users\XPC\Documents\GitHub\Grupo_6_CE_LN\Grupo_6_CE_LN\Grupo_6_CE_LN\bin\Debug\net8.0\Grupo_6_CE_LN.pdb
+C:\Users\XPC\Documents\GitHub\Grupo_6_CE_LN\Grupo_6_CE_LN\Grupo_6_CE_LN\obj\Debug\net8.0\Grupo_6_.52834F07.Up2Date
+C:\Users\XPC\Documents\GitHub\Grupo_6_CE_LN\Grupo_6_CE_LN\Grupo_6_CE_LN\obj\Debug\net8.0\Grupo_6_CE_LN.genruntimeconfig.cache
+C:\Users\XPC\Documents\GitHub\Grupo_6_CE_LN\Grupo_6_CE_LN\Grupo_6_CE_LN\obj\Debug\net8.0\ref\Grupo_6_CE_LN.dll
+C:\Users\XPC\Documents\GitHub\Grupo_6_CE_LN\Grupo_6_CE_LN\Grupo_6_CE_LN\obj\Debug\net8.0\Grupo_6_CE_LN.RazorAssemblyInfo.cache
+C:\Users\XPC\Documents\GitHub\Grupo_6_CE_LN\Grupo_6_CE_LN\Grupo_6_CE_LN\obj\Debug\net8.0\Grupo_6_CE_LN.RazorAssemblyInfo.cs

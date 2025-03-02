@@ -31,10 +31,5 @@ namespace Grupo_6_CE_LN.Models
     [ForeignKey("ID_Usuario")]
     public Usuarios Usuarios { get; set; }
 
-    [ForeignKey("IdRuta")]
-    public Rutas Rutas { get; set; }
-
-    [ForeignKey("Id")]
-    public Vehiculos Vehiculos { get; set; }
     }
 }

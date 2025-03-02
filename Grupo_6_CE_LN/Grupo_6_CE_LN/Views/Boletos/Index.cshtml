@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Grupo_6_CE_LN.Models.Boletos>
+
+@{
+    ViewData["Title"] = "Boletos";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a href="@Url.Action("Create")" class="btn btn-primary">Crear Nuevo Boleto</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID Usuario</th>
+            <th>ID Ruta</th>
+            <th>ID Vehículo</th>
+            <th>Fecha y Hora de Compra</th>
+            <th>Asiento</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ID_Usuario</td>
+                <td>@item.IdRuta</td>
+                <td>@item.Id</td>
+                <td>@item.FechaHoraCompra</td>
+                <td>@item.Asiento</td>
+                <td>@item.Estado</td>
+                <td>
+                    <a href="@Url.Action("Details", new { id = item.ID_Boleto })" class="btn btn-info">Detalles</a>
+                    <a href="@Url.Action("Edit", new { id = item.ID_Boleto })" class="btn btn-warning">Editar</a>
+                    <a href="@Url.Action("Delete", new { id = item.ID_Boleto })" class="btn btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

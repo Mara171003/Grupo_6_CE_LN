@@ -1,0 +1,38 @@
+﻿@model Grupo_6_CE_LN.Models.Usuarios
+
+@{
+    ViewData["Title"] = "Editar Usuario";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h4>Usuario</h4>
+<hr />
+
+<form asp-action="Edit" method="post">
+    <div class="form-group">
+        <label for="NombreUsuario">Nombre de Usuario</label>
+        <input type="text" class="form-control" id="NombreUsuario" name="NombreUsuario" value="@Model.NombreUsuario" />
+    </div>
+    <div class="form-group">
+        <label for="NombreCompleto">Nombre Completo</label>
+        <input type="text" class="form-control" id="NombreCompleto" name="NombreCompleto" value="@Model.NombreCompleto" />
+    </div>
+    <div class="form-group">
+        <label for="Correo">Correo Electrónico</label>
+        <input type="email" class="form-control" id="Correo" name="Correo" value="@Model.Correo" />
+    </div>
+    <div class="form-group">
+        <label for="Telefono">Teléfono</label>
+        <input type="text" class="form-control" id="Telefono" name="Telefono" value="@Model.Telefono" />
+    </div>
+    <div class="form-group">
+        <label for="ID_Rol">Rol</label>
+        <select class="form-control" id="ID_Rol" name="ID_Rol">
+            <option value="1" @(Model.ID_Rol == 1 ? "selected" : "")>Administrador</option>
+            <option value="2" @(Model.ID_Rol == 2 ? "selected" : "")>Conductor</option>
+            <option value="3" @(Model.ID_Rol == 3 ? "selected" : "")>Usuario</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Actualizar</button>
+</form>
