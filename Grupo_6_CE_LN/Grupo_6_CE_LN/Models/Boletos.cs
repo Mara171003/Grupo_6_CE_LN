@@ -1,11 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Grupo_6_CE_LN.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace Grupo_6_CE_LN.Models
+public class Boletos
 {
-    public class Boletos
-    {
-
     [Key]
     public int ID_Boleto { get; set; }
 
@@ -31,5 +29,9 @@ namespace Grupo_6_CE_LN.Models
     [ForeignKey("ID_Usuario")]
     public Usuarios Usuarios { get; set; }
 
-    }
+    [ForeignKey("IdRuta")]
+    public Ruta Ruta { get; set; }
+
+    [ForeignKey("Id")]
+    public Vehiculo Vehiculo { get; set; }
 }

@@ -19,15 +19,23 @@ namespace Grupo_6_CE_LN.Controllers
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<Boletos>> GetBoletos()
+        public async Task<ActionResult<IEnumerable<Boletos>>> GetBoletos()
         {
-            return _context.Boletos.Include(b => b.Usuarios).ToList();
+            return await _context.Boletos
+                .Include(b => b.Usuarios)
+                .Include(b => b.Ruta)
+                .Include(b => b.Vehiculo)
+                .ToListAsync();
         }
 
         [HttpGet("{id}")]
-        public ActionResult<Boletos> GetBoleto(int id)
+        public async Task<ActionResult<Boletos>> GetBoleto(int id)
         {
-            var boleto = _context.Boletos.Include(b => b.Usuarios).FirstOrDefault(b => b.ID_Boleto == id);
+            var boleto = await _context.Boletos
+                .Include(b => b.Usuarios)
+                .Include(b => b.Ruta)
+                .Include(b => b.Vehiculo)
+                .FirstOrDefaultAsync(b => b.ID_Boleto == id);
 
             if (boleto == null)
             {
@@ -38,24 +46,24 @@ namespace Grupo_6_CE_LN.Controllers
         }
 
         [HttpPost]
-        public ActionResult<Boletos> PostBoleto(Boletos boleto)
+        public async Task<ActionResult<Boletos>> PostBoleto(Boletos boleto)
         {
-            if (!_context.Usuarios.Any(u => u.ID_Usuario == boleto.ID_Usuario) //||
-               // !_context.Rutas.Any(r => r.IdRuta == boleto.IdRuta) ||
-               // !_context.Vehiculos.Any(v => v.Id == boleto.Id)
-               )
+            // Validaciones para asegurar que el usuario, ruta y vehículo existen
+            if (!await _context.Usuarios.AnyAsync(u => u.ID_Usuario == boleto.ID_Usuario) ||
+                !await _context.Rutas.AnyAsync(r => r.IdRuta == boleto.IdRuta) ||
+                !await _context.Vehiculos.AnyAsync(v => v.Id == boleto.Id))
             {
                 return BadRequest("Usuario, Ruta o Vehículo no encontrado.");
             }
 
             _context.Boletos.Add(boleto);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetBoleto), new { id = boleto.ID_Boleto }, boleto);
         }
 
         [HttpPut("{id}")]
-        public IActionResult PutBoleto(int id, Boletos boleto)
+        public async Task<IActionResult> PutBoleto(int id, Boletos boleto)
         {
             if (id != boleto.ID_Boleto)
             {
@@ -63,9 +71,10 @@ namespace Grupo_6_CE_LN.Controllers
             }
 
             _context.Entry(boleto).State = EntityState.Modified;
+
             try
             {
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -83,16 +92,16 @@ namespace Grupo_6_CE_LN.Controllers
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeleteBoleto(int id)
+        public async Task<IActionResult> DeleteBoleto(int id)
         {
-            var boleto = _context.Boletos.Find(id);
+            var boleto = await _context.Boletos.FindAsync(id);
             if (boleto == null)
             {
                 return NotFound();
             }
 
             _context.Boletos.Remove(boleto);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             return NoContent();
         }

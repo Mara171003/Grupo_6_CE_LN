@@ -1,13 +1,15 @@
 ﻿using Grupo_6_CE_LN.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Grupo_6_CE_LN.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class UsuariosController : ControllerBase
     {
         private readonly CasoEstudioContext _context;
@@ -18,15 +20,15 @@ namespace Grupo_6_CE_LN.Controllers
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<Usuarios>> GetUsuarios()
+        public async Task<ActionResult<IEnumerable<Usuarios>>> GetUsuarios()
         {
-            return _context.Usuarios.ToList();
+            return await _context.Usuarios.Include(u => u.Roles).ToListAsync();
         }
 
         [HttpGet("{id}")]
-        public ActionResult<Usuarios> GetUsuario(int id)
+        public async Task<ActionResult<Usuarios>> GetUsuario(int id)
         {
-            var usuario = _context.Usuarios.Find(id);
+            var usuario = await _context.Usuarios.Include(u => u.Roles).FirstOrDefaultAsync(u => u.ID_Usuario == id);
 
             if (usuario == null)
             {
@@ -37,16 +39,22 @@ namespace Grupo_6_CE_LN.Controllers
         }
 
         [HttpPost]
-        public ActionResult<Usuarios> PostUsuario(Usuarios usuario)
+        public async Task<ActionResult<Usuarios>> PostUsuario(Usuarios usuario)
         {
+            //Validacion para revisar que el rol exista.
+            if (!_context.Roles.Any(r => r.ID_Rol == usuario.ID_Rol))
+            {
+                return BadRequest("El Rol especificado no existe");
+            }
+
             _context.Usuarios.Add(usuario);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetUsuario), new { id = usuario.ID_Usuario }, usuario);
         }
 
         [HttpPut("{id}")]
-        public IActionResult PutUsuario(int id, Usuarios usuario)
+        public async Task<IActionResult> PutUsuario(int id, Usuarios usuario)
         {
             if (id != usuario.ID_Usuario)
             {
@@ -54,25 +62,44 @@ namespace Grupo_6_CE_LN.Controllers
             }
 
             _context.Entry(usuario).State = EntityState.Modified;
-            _context.SaveChanges();
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!UsuarioExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
 
             return NoContent();
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeleteUsuario(int id)
+        public async Task<IActionResult> DeleteUsuario(int id)
         {
-            var usuario = _context.Usuarios.Find(id);
-
+            var usuario = await _context.Usuarios.FindAsync(id);
             if (usuario == null)
             {
                 return NotFound();
             }
 
             _context.Usuarios.Remove(usuario);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             return NoContent();
+        }
+
+        private bool UsuarioExists(int id)
+        {
+            return _context.Usuarios.Any(e => e.ID_Usuario == id);
         }
     }
 }
