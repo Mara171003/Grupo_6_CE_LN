@@ -26,6 +26,34 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Admin\Source\Repos\Grupo_6_CE_LN\Grupo_6_CE_LN\Grupo_6_CE_LN
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Admin/Source/Repos/Grupo_6_CE_LN/Grupo_6_CE_LN/Grupo_6_CE_LN/Views/Boletos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9sZXRvc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Source/Repos/Grupo_6_CE_LN/Grupo_6_CE_LN/Grupo_6_CE_LN/Views/Boletos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9sZXRvc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Source/Repos/Grupo_6_CE_LN/Grupo_6_CE_LN/Grupo_6_CE_LN/Views/Boletos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9sZXRvc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Source/Repos/Grupo_6_CE_LN/Grupo_6_CE_LN/Grupo_6_CE_LN/Views/Boletos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9sZXRvc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Source/Repos/Grupo_6_CE_LN/Grupo_6_CE_LN/Grupo_6_CE_LN/Views/Boletos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9sZXRvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Source/Repos/Grupo_6_CE_LN/Grupo_6_CE_LN/Grupo_6_CE_LN/Views/Horarios/Horarios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9yYXJpb3NcSG9yYXJpb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Source/Repos/Grupo_6_CE_LN/Grupo_6_CE_LN/Grupo_6_CE_LN/Views/Paradas/Paradas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyYWRhc1xQYXJhZGFzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Admin/Source/Repos/Grupo_6_CE_LN/Grupo_6_CE_LN/Grupo_6_CE_LN/Views/Rutas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUnV0YXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,6 +72,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Admin/Source/Repos/Grupo_6_CE_LN/Grupo_6_CE_LN/Grupo_6_CE_LN/Views/Rutas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUnV0YXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Source/Repos/Grupo_6_CE_LN/Grupo_6_CE_LN/Grupo_6_CE_LN/Views/Usuarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Source/Repos/Grupo_6_CE_LN/Grupo_6_CE_LN/Grupo_6_CE_LN/Views/Usuarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Source/Repos/Grupo_6_CE_LN/Grupo_6_CE_LN/Grupo_6_CE_LN/Views/Usuarios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Source/Repos/Grupo_6_CE_LN/Grupo_6_CE_LN/Grupo_6_CE_LN/Views/Usuarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Source/Repos/Grupo_6_CE_LN/Grupo_6_CE_LN/Grupo_6_CE_LN/Views/Usuarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/Source/Repos/Grupo_6_CE_LN/Grupo_6_CE_LN/Grupo_6_CE_LN/Views/Vehiculos/Create.cshtml]

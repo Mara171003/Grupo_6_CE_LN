@@ -1,0 +1,37 @@
+﻿@model Grupo_6_CE_LN.Models.Usuarios
+
+@{
+    ViewData["Title"] = "Eliminar Usuario";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h4>¿Está seguro que desea eliminar este usuario?</h4>
+<hr />
+
+<div>
+    <h4>Usuario</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">Nombre de Usuario</dt>
+        <dd class="col-sm-10">@Model.NombreUsuario</dd>
+
+        <dt class="col-sm-2">Nombre Completo</dt>
+        <dd class="col-sm-10">@Model.NombreCompleto</dd>
+
+        <dt class="col-sm-2">Correo Electrónico</dt>
+        <dd class="col-sm-10">@Model.Correo</dd>
+
+        <dt class="col-sm-2">Teléfono</dt>
+        <dd class="col-sm-10">@Model.Telefono</dd>
+
+        <dt class="col-sm-2">Rol</dt>
+        <dd class="col-sm-10">@Model.Roles.NombreRol</dd>
+    </dl>
+</div>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" name="id" value="@Model.ID_Usuario" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a href="@Url.Action("Index")" class="btn btn-secondary">Cancelar</a>
+</form>

@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Grupo_6_CE_LN.Models;
+using System.Data;
 
 namespace Grupo_6_CE_LN.Data
 {
@@ -13,5 +14,8 @@ namespace Grupo_6_CE_LN.Data
         public DbSet<Paradas> Paradas { get; set; }
         public DbSet<Horarios> Horarios { get; set; }
         public DbSet<Vehiculo> Vehiculos { get; set; }
+        public DbSet<Usuarios> Usuarios { get; set; }
+        public DbSet<Roles> Roles { get; set; }
+        public DbSet<Boletos> Boletos { get; set; }
     }
 }

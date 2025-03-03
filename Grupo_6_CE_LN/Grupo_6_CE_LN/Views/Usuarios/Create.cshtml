@@ -1,0 +1,42 @@
+﻿@model Grupo_6_CE_LN.Models.Usuarios
+
+@{
+    ViewData["Title"] = "Crear Usuario";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h4>Usuario</h4>
+<hr />
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="NombreUsuario">Nombre de Usuario</label>
+        <input type="text" class="form-control" id="NombreUsuario" name="NombreUsuario" />
+    </div>
+    <div class="form-group">
+        <label for="NombreCompleto">Nombre Completo</label>
+        <input type="text" class="form-control" id="NombreCompleto" name="NombreCompleto" />
+    </div>
+    <div class="form-group">
+        <label for="Correo">Correo Electrónico</label>
+        <input type="email" class="form-control" id="Correo" name="Correo" />
+    </div>
+    <div class="form-group">
+        <label for="Telefono">Teléfono</label>
+        <input type="text" class="form-control" id="Telefono" name="Telefono" />
+    </div>
+    <div class="form-group">
+        <label for="Contraseña">Contraseña</label>
+        <input type="password" class="form-control" id="Contraseña" name="Contraseña" />
+    </div>
+    <div class="form-group">
+        <label for="ID_Rol">Rol</label>
+        <select class="form-control" id="ID_Rol" name="ID_Rol">
+            <option value="1">Administrador</option>
+            <option value="2">Conductor</option>
+            <option value="3">Usuario</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Crear</button>
+</form>

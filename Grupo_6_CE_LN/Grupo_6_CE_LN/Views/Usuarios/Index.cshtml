@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Grupo_6_CE_LN.Models.Usuarios>
+
+@{
+    ViewData["Title"] = "Usuarios";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a href="@Url.Action("Create")" class="btn btn-primary">Crear Nuevo Usuario</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre de Usuario</th>
+            <th>Nombre Completo</th>
+            <th>Correo Electrónico</th>
+            <th>Teléfono</th>
+            <th>Rol</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.NombreUsuario</td>
+                <td>@item.NombreCompleto</td>
+                <td>@item.Correo</td>
+                <td>@item.Telefono</td>
+                <td>@item.Roles.NombreRol</td>
+                <td>
+                    <a href="@Url.Action("Details", new { id = item.ID_Usuario })" class="btn btn-info">Detalles</a>
+                    <a href="@Url.Action("Edit", new { id = item.ID_Usuario })" class="btn btn-warning">Editar</a>
+                    <a href="@Url.Action("Delete", new { id = item.ID_Usuario })" class="btn btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

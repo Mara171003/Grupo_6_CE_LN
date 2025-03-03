@@ -44,7 +44,7 @@ namespace Grupo_6_CE_LN.Controllers
         [HttpPost]
         public async Task<ActionResult<Rutas>> PostRutas(Rutas ruta)
         {
-            _context.Vehiculos.Add(ruta);
+            _context.Rutas.Add(ruta);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetRutas), new { id = ruta.IdRuta}, ruta);
@@ -90,7 +90,7 @@ namespace Grupo_6_CE_LN.Controllers
                 return NotFound();
             }
 
-            _context.Vehiculos.Remove(ruta);
+            _context.Rutas.Remove(ruta);
             await _context.SaveChangesAsync();
 
             return NoContent();
@@ -99,20 +99,6 @@ namespace Grupo_6_CE_LN.Controllers
         private bool RutasExists(int id)
         {
             return _context.Rutas.Any(e => e.IdRuta == id);
-        }
-
-        // GET: api/Paradas
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Paradas>>> GetParadas()
-        {
-            return await _context.Paradas.ToListAsync();
-        }
-
-        // GET: api/Horarios
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Horarios>>> GetHorarios()
-        {
-            return await _context.Horarios.ToListAsync();
         }
 
     }
