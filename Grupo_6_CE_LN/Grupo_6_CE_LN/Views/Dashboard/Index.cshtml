@@ -1,0 +1,14 @@
+﻿@model Grupo_6_CE_LN.Models.DashboardStats
+
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <h4>Resumen del Dashboard</h4>
+    <p><strong>Total de rutas activas:</strong> @Model.TotalRoutesActive</p>
+    <p><strong>Total de vehículos en buen estado:</strong> @Model.TotalVehiclesInGoodCondition</p>
+    <p><strong>Total de boletos vendidos este mes:</strong> @Model.TotalTicketsSold</p>
+</div>
