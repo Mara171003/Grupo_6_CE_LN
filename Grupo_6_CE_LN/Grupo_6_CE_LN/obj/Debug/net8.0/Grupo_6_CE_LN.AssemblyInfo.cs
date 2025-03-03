@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Grupo_6_CE_LN")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+90d1522d2f173256b685511a989bc72cb8f73fe8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f23f113d76e1c82426c3bdb857106c05987dc2c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Grupo_6_CE_LN")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Grupo_6_CE_LN")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

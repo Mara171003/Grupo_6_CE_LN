@@ -17,5 +17,6 @@ namespace Grupo_6_CE_LN.Data
         public DbSet<Usuarios> Usuarios { get; set; }
         public DbSet<Roles> Roles { get; set; }
         public DbSet<Boletos> Boletos { get; set; }
+        public DbSet<DashboardStats> DashboardStats { get; set; }
     }
 }

@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EACE7978-AF98-4F09-8C28-8691AC4D7137}|Grupo_6_CE_LN\\Grupo_6_CE_LN.csproj|c:\\users\\admin\\source\\repos\\grupo_6_ce_ln\\grupo_6_ce_ln\\grupo_6_ce_ln\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{EACE7978-AF98-4F09-8C28-8691AC4D7137}|Grupo_6_CE_LN\\Grupo_6_CE_LN.csproj|solutionrelative:grupo_6_ce_ln\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{EACE7978-AF98-4F09-8C28-8691AC4D7137}|Grupo_6_CE_LN\\Grupo_6_CE_LN.csproj|c:\\users\\admin\\source\\repos\\grupo_6_ce_ln\\grupo_6_ce_ln\\grupo_6_ce_ln\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EACE7978-AF98-4F09-8C28-8691AC4D7137}|Grupo_6_CE_LN\\Grupo_6_CE_LN.csproj|solutionrelative:grupo_6_ce_ln\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EACE7978-AF98-4F09-8C28-8691AC4D7137}|Grupo_6_CE_LN\\Grupo_6_CE_LN.csproj|c:\\users\\admin\\source\\repos\\grupo_6_ce_ln\\grupo_6_ce_ln\\grupo_6_ce_ln\\models\\dashboardstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EACE7978-AF98-4F09-8C28-8691AC4D7137}|Grupo_6_CE_LN\\Grupo_6_CE_LN.csproj|solutionrelative:grupo_6_ce_ln\\models\\dashboardstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EACE7978-AF98-4F09-8C28-8691AC4D7137}|Grupo_6_CE_LN\\Grupo_6_CE_LN.csproj|c:\\users\\admin\\source\\repos\\grupo_6_ce_ln\\grupo_6_ce_ln\\grupo_6_ce_ln\\data\\casoestudiocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EACE7978-AF98-4F09-8C28-8691AC4D7137}|Grupo_6_CE_LN\\Grupo_6_CE_LN.csproj|solutionrelative:grupo_6_ce_ln\\data\\casoestudiocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,24 +22,50 @@
       "DocumentGroups": [
         {
           "DockedHeight": 224,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\appsettings.json",
-              "RelativeDocumentMoniker": "Grupo_6_CE_LN\\appsettings.json",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\appsettings.json",
-              "RelativeToolTip": "Grupo_6_CE_LN\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-03T01:32:37.83Z",
+              "DocumentIndex": 1,
+              "Title": "DashboardStats.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Models\\DashboardStats.cs",
+              "RelativeDocumentMoniker": "Grupo_6_CE_LN\\Models\\DashboardStats.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Models\\DashboardStats.cs",
+              "RelativeToolTip": "Grupo_6_CE_LN\\Models\\DashboardStats.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T20:20:40.446Z",
               "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CasoEstudioContext.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Data\\CasoEstudioContext.cs",
+              "RelativeDocumentMoniker": "Grupo_6_CE_LN\\Data\\CasoEstudioContext.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Data\\CasoEstudioContext.cs",
+              "RelativeToolTip": "Grupo_6_CE_LN\\Data\\CasoEstudioContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T20:16:52.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "Grupo_6_CE_LN\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Grupo_6_CE_LN\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "Grupo_6_CE_LN\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwDAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T20:06:46.484Z",
+              "EditorCaption": ""
             }
           ]
         }
